@@ -19,6 +19,10 @@ body {
     justify-content: space-between;
 }
 
+.secondary:hover {
+    background-color: lightgray;
+}
+
 .tertiary {
     display: flex;
 }
@@ -38,6 +42,7 @@ nav {
 img {
     max-width: 100px;
     max-height: 100px;
+    border-radius: 100%;
 }
 
 a {
@@ -46,4 +51,17 @@ a {
 
 nav, a, p {
     color: grey;
+}
+
+@media (max-width: 768px) {
+    img {
+        max-width: 75px;
+        max-height: 75px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-container {
+        flex-direction: column;
+    }
 }
